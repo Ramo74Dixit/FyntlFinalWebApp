@@ -1,12 +1,9 @@
 import React from 'react'
 import Adv1 from './Adv1'
-import React from "react";
-import Navbar from "./Navbar";
-
+import Navbar from './Navbar';
+import Footer from './Footer';
 const Home = () => {
   return (
-    <div>
-      <Adv1/>
     <div
       style={{
         backgroundImage: `url('/bg-home.png')`,
@@ -16,7 +13,7 @@ const Home = () => {
         width: "100%",
       }}
     >
-      <Navbar />
+       <Navbar />
       <div className="flex">
       <div className="text-left mt-[15vh] ml-[17vw] max-w-lg text-white">
         <p className="text-sm font-light mb-4">
@@ -71,6 +68,8 @@ const Home = () => {
         <img src="./heroimg.png" className="w-[20vw] ml-auto mr-[12vw] mt-10"></img>
       </div>
       </div>
+      <Adv1/>
+      <Footer />
     </div>
   );
 };

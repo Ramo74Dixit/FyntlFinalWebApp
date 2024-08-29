@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>
-      <Link to="/">Navbar</Link>
-    </div>
-  )
-}
     <nav className="flex items-center justify-center px-6 py-4 bg-transparent">
       <div className="flex items-center space-x-4">
         <img src="/logo.png" alt="Fyntl-AI Logo" className="h-8 w-8" />
