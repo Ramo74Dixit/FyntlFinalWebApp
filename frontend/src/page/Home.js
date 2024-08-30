@@ -4,6 +4,7 @@ import Feature from './Features'
 import Copilot from './Co-pilot'
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Adv2 from './Adv2';
 const Home = () => {
   return (
     <div
@@ -72,6 +73,7 @@ const Home = () => {
       </div>
       <Adv1/>
       <Feature/>
+      <Adv2/>
       <Copilot/>
       <Footer />
     </div>

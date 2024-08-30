@@ -1,10 +1,9 @@
 import React from "react";
 import img1 from "../assets/Group.png";
-import Adv2 from './Adv2';
+// import Adv2 from './Adv2';
 
 const Adv1 = () => {
   return (
-    <div>
     <div className="flex flex-row justify-center items-center h-[70vh]">
       <div className="flex justify-center items-center p-4 w-[40%] h-[50vh]">
         <p className="font-roboto font-semibold text-black text-[33px] mr-4">
@@ -25,7 +24,6 @@ const Adv1 = () => {
     
       </div>
     </div>
-          <Adv2/></div>
 
   );
 };

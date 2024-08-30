@@ -21,7 +21,6 @@ function App() {
           {/* <Route path="/adv1" element={<Adv1 />} /> */}
 
         </Routes>
-       
       </div>
     </Router>
   );
