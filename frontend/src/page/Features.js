@@ -3,8 +3,13 @@ import Card from './Card';
 const  Feature =()=>
 {
     return(
+      
         <main className="flex justify-center font-roboto flex-wrap p-5 leading-relaxed bg-gradient-to-r from-blue-400 to-blue-900">
-    <div className="flex flex-wrap justify-center gap-5">
+   <div className="w-full flex justify-center mb-20 mt-20">
+    <h1 className="text-center text-white text-3xl">Key Features of Fyntl-AI App</h1>
+  </div>
+        <div className="flex flex-wrap justify-center gap-5">
+      
       <Card
         image="/assets/message.png"
         title="Conversational AI Assistant"
