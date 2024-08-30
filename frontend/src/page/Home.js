@@ -17,18 +17,18 @@ const Home = () => {
       }}
     >
        <Navbar />
-      <div className="flex">
+      <div className="flex h-[90vh]">
       <div className="text-left mt-[15vh] ml-[17vw] max-w-lg text-white">
         <p className="text-sm font-light mb-4">
           Your AI accountant, always on duty.
         </p>
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl font-[semibold] mb-4 w-[30vw] text-[45px] pb-4">
           The Ultimate <span className="text-yellow-400">GST App</span>
           <br />
           Powerful, Secure, and Easy to Use
         </h1>
         <img src="/linehome.png" alt="linehome"></img>
-        <p className="text-base font-light mt-4 w-[30vw]">
+        <p className="text-[#FEFEFE] mt-6 w-[25vw] font-[19px]">
           Tired of the complexities of GST compliance? Fyntl-AI simplifies your
           accounting tasks with its powerful AI technology. Download the app now
           and experience the future of GST management.

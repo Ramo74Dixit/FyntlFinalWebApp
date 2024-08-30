@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-center px-6 py-4 bg-transparent">
+    <nav className="flex items-center justify-center px-6 py-4 bg-transparent h-[10vh]">
       <div className="flex items-center space-x-4">
         <img src="/logo.png" alt="Fyntl-AI Logo" className="h-8 w-8" />
         <span className="text-lg font-semibold pr-14 text-white">Fyntl-AI</span>
