@@ -1,5 +1,7 @@
 import React from 'react'
 import Adv1 from './Adv1'
+import Feature from './Features'
+import Copilot from './Co-pilot'
 import Navbar from './Navbar';
 import Footer from './Footer';
 const Home = () => {
@@ -69,6 +71,8 @@ const Home = () => {
       </div>
       </div>
       <Adv1/>
+      <Feature/>
+      <Copilot/>
       <Footer />
     </div>
   );
