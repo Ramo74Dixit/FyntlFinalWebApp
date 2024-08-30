@@ -5,7 +5,7 @@ import Adv2 from './Adv2';
 const Adv1 = () => {
   return (
     <div>
-    <div className="flex flex-row justify-center items-center h-[70vh]">
+    <div className="flex flex-row justify-center items-center h-[70vh] bg-[white]">
       <div className="flex justify-center items-center p-4 w-[40%] h-[50vh]">
         <p className="font-roboto font-semibold text-black text-[33px] mr-4">
           What is Fyntl AI
