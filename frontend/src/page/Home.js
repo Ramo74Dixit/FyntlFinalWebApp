@@ -3,7 +3,7 @@ import Adv1 from "./Adv1";
 import Adv2 from "./Adv2";
 import Feature from "./Features";
 import Copilot from "./Co-pilot";
-import Privacy from "./Privacy";
+import Privacy from "./Co-Privacy";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 const Home = () => {
