@@ -1,13 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './page/Home';
-import Footer from './page/Footer';
 import Services from './page/Services';
 import PricingPlans from './page/PricingPlans';
 import Blogs from './page/Blogs';
 import ReachUs from './page/ReachUs';
-import Adv1 from './page/Adv1';
-
 function App() {
   return (
     <Router>
@@ -22,7 +19,6 @@ function App() {
           {/* <Route path="/adv1" element={<Adv1 />} /> */}
 
         </Routes>
-       
       </div>
     </Router>
   );

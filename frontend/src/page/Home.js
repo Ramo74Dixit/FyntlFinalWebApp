@@ -1,6 +1,12 @@
 import React from 'react'
 import Adv1 from './Adv1'
+import Feature from './Features'
+import Copilot from './Co-pilot'
 import Navbar from './Navbar';
+import Footer from './Footer';
+import Adv2 from './Adv2';
+import Privacy from './Privacy';
+import Navbar from "./Navbar";
 import Footer from './Footer';
 const Home = () => {
   return (
@@ -65,10 +71,14 @@ const Home = () => {
         height: "80vh",
         width: "70%",
       }}>
-        <img src="./heroimg.png" className="w-[20vw] ml-auto mr-[12vw] mt-10"></img>
+        <img src="./heroimg.png" alt=" "className="w-[20vw] ml-auto mr-[12vw] mt-10"></img>
       </div>
       </div>
       <Adv1/>
+      <Feature/>
+      <Adv2/> 
+      <Copilot/>
+      <Privacy/> 
       <Footer />
     </div>
   );
