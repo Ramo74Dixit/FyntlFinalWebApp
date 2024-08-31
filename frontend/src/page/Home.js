@@ -1,17 +1,13 @@
 import React from 'react'
 import Adv1 from './Adv1'
-<<<<<<< Updated upstream
 import Feature from './Features'
 import Copilot from './Co-pilot'
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Privacy from './Privacy'
-import Adv2 from './Adv2'
-=======
+import Adv2 from './Adv2';
+import Privacy from './Privacy';
 import Navbar from "./Navbar";
 import Footer from './Footer';
-
->>>>>>> Stashed changes
 const Home = () => {
   return (
     <div
@@ -79,15 +75,11 @@ const Home = () => {
       </div>
       </div>
       <Adv1/>
-<<<<<<< Updated upstream
       <Feature/>
-      <Adv2/>
+      <Adv2/> 
       <Copilot/>
-      <Privacy/>
+      <Privacy/> 
       <Footer />
-=======
-      <Footer/>
->>>>>>> Stashed changes
     </div>
   );
 };
