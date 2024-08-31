@@ -4,6 +4,8 @@ import Feature from './Features'
 import Copilot from './Co-pilot'
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Adv2 from './Adv2';
+import Privacy from './Privacy';
 const Home = () => {
   return (
     <div
@@ -72,9 +74,9 @@ const Home = () => {
       </div>
       <Adv1/>
       <Feature/>
-      <Adv2/>
+      <Adv2/> 
       <Copilot/>
-      <Privacy/>
+      <Privacy/> 
       <Footer />
     </div>
   );
