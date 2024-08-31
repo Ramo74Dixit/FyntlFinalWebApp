@@ -7,6 +7,7 @@ import PricingPlans from './page/PricingPlans';
 import Blogs from './page/Blogs';
 import ReachUs from './page/ReachUs';
 import Adv1 from './page/Adv1';
+
 function App() {
   return (
     <Router>
