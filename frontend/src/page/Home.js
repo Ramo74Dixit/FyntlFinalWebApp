@@ -6,8 +6,6 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Adv2 from './Adv2';
 import Privacy from './Privacy';
-import Navbar from "./Navbar";
-import Footer from './Footer';
 const Home = () => {
   return (
     <div

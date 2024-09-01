@@ -39,3 +39,16 @@
     transform: rotate(360deg);
   }
 }
+/* Add this to your global CSS file */
+.copilot-navbar-style nav {
+  background-color: white !important; /* Example custom background */
+}
+
+.copilot-navbar-style .text-white {
+  color: black !important; /* Override white text to black */
+}
+
+.copilot-navbar-style button {
+  background-color: blue !important; /* Custom button background */
+  color: white !important; /* Custom button text color */
+}
