@@ -7,6 +7,7 @@ import Twitter from "../assets/Twitter.png";
 import Linkedin from "../assets/Linkedin.png";
 import Instagram from "../assets/Instagram.png";
 import FyntlLOGO from "../assets/FyntlLOGO.png";
+import { Link } from 'react-router-dom';
 
 // Contactus
 import Email from "../assets/Email.png";
@@ -170,9 +171,9 @@ const Footer = () => {
                      Terms and Conditions
                   </a>{" "}
                   |{" "}
-                  <a href="/privacy-policy" className="text-blue-300 underline">
-                     Privacy Policy
-                  </a>
+                  <Link to="/privacy-policy" className="text-blue-300 underline">
+        Privacy Policy
+      </Link>
                </p>
             </div>
          </div>

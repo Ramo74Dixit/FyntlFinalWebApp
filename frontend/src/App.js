@@ -6,6 +6,7 @@ import PricingPlans from './page/PricingPlans';
 import Blogs from './page/Blogs';
 import ReachUs from './page/ReachUs';
 import CopilotIntro from './page/CopilotIntro'
+import PrivacyPolicy from './page/PrivacyPolicy';
 function App() {
   return (
     <Router>
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/adv1" element={<Adv1 />} /> */}
           <Route path="/copilot-intro" element={<CopilotIntro />} />          
-          <Route path="/privacy-policy" element={<CopilotIntro />} />          
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />          
 
         </Routes>
       </div>
