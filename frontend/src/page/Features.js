@@ -8,7 +8,7 @@ const  Feature =()=>
    <div className="w-full flex justify-center mb-20 mt-20">
     <h1 className="text-center text-white text-3xl">Key Features of Fyntl-AI App</h1>
   </div>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex w-full flex-wrap justify-center gap-5">
       
       <Card
         image="/assets/message.png"
