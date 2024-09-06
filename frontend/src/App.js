@@ -18,7 +18,9 @@ function App() {
           <Route path="/reach-us" element={<ReachUs />} />
           <Route path="/" element={<Home />} />
           {/* <Route path="/adv1" element={<Adv1 />} /> */}
-          <Route path="/copilot-intro" element={<CopilotIntro />} />
+          <Route path="/copilot-intro" element={<CopilotIntro />} />          
+          <Route path="/privacy-policy" element={<CopilotIntro />} />          
+
         </Routes>
       </div>
     </Router>
