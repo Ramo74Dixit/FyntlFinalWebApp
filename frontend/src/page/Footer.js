@@ -9,6 +9,7 @@ import Linkedin from "../assets/Linkedin.png";
 import Instagram from "../assets/Instagram.png";
 import FyntlLOGO from "../assets/FyntlLOGO.png";
 import line from "../assets/line.png";
+import { Link } from 'react-router-dom';
 
 // Contactus
 import Email from "../assets/Email.png";
@@ -124,6 +125,7 @@ const Footer = () => {
         </div>
       </div>
 
+
       <div className="flex sm:hidden flex-col md:flex-row justify-between items-center mb-8">
         <div className="font-light text-sm text-center md:text-left">All Rights Reserved</div>
         <div className="flex font-light text-xs md:text-right mt-2">
@@ -136,6 +138,27 @@ const Footer = () => {
           </Link>
           <p className="ml-10">Designed by Shubhangi Swami</p>
         </div>
+         {/* Footer Bottom Text */}
+         <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-16 lg:px-24 mb-4">
+            <div className="font-normal text-lg text-center md:text-left">
+               Designed By Shubhangi Swami
+            </div>
+            <div className="font-normal text-lg text-center md:text-right mt-2 mr-10 md:mt-0">
+               <p>
+                  All Rights Reserved |{" "}
+                  <a
+                     href="/terms-and-conditions"
+                     className="text-blue-300 underline"
+                  >
+                     Terms and Conditions
+                  </a>{" "}
+                  |{" "}
+                  <Link to="/privacy-policy" className="text-blue-300 underline">
+        Privacy Policy
+      </Link>
+               </p>
+            </div>
+         </div>
       </div>
     </div>
   );

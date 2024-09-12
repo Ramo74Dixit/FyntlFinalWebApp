@@ -7,6 +7,8 @@ import Blogs from './page/Blogs';
 import ReachUs from './page/ReachUs';
 import CopilotIntro from './page/CopilotIntro'
 import TermsandCondition from './page/TermsandCondition';
+import PrivacyPolicy from './page/PrivacyPolicy';
+
 function App() {
   return (
     <Router>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/copilot-intro" element={<CopilotIntro />} />
           <Route path="/terms" element={<TermsandCondition />} />
         <Route path="/privacy" element={<TermsandCondition />} />
+          <Route path="/copilot-intro" element={<CopilotIntro />} />         
         </Routes>
       </div>
     </Router>

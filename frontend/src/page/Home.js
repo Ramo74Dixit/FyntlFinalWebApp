@@ -6,6 +6,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Adv2 from './Adv2';
 import Privacy from './Privacy';
+import Card from './Integrate';
+
 const Home = () => {
    return (
       <div
