@@ -33,7 +33,7 @@ const CardSection = () => {
             if (!isDraggingRef.current) {
                 setActiveIndex((prevIndex) => (prevIndex + 1) % cards.length);
             }
-        }, 6000); // Change slide every 6 seconds
+        }, 4000); // Change slide every 6 seconds
 
         return () => clearInterval(interval);
     }, [cards.length]);
@@ -73,10 +73,10 @@ const CardSection = () => {
             cardSectionElement.removeEventListener('mouseup', handleMouseUp);
             cardSectionElement.removeEventListener('mouseleave', handleMouseUp);
         };
-    }, []);
+    },);
 
     return (
-        <div ref={cardSectionRef} className="relative flex items-center justify-center h-[435px] w-full mt-10 mb-16 cursor-grab overflow-hidden">
+        <div ref={cardSectionRef} className="relative flex items-center justify-center h-[250px] sm:h-[435px] w-full mt-0 sm:mt-10 mb-0 sm:mb-16 cursor-grab overflow-hidden">
             {cards.map((card, index) => {
                 const isActive = index === activeIndex;
                 const isLeft = index === (activeIndex - 1 + cards.length) % cards.length;
@@ -97,11 +97,18 @@ const CardSection = () => {
 };
 
 const Card = ({ isActive, card, isLeft, isRight }) => {
+    const isMobile = window.innerWidth <= 700;
+
     const baseClass = "absolute transform transition-all duration-700 ease-in-out rounded-xl";
-    const activeClass = "w-[600px] h-[435px] z-20 bg-[#1A4E8B] text-white";
-    const sideClass = "w-[233px] h-[375px] z-10 bg-white shadow-lg";
-    const contentClass = "p-6 flex flex-col items-center"; // Keep padding as before
-    const positionClass = isLeft
+    const activeClass = "w-[20vh] h-[18vh]  sm:w-[600px] sm:h-[435px] z-20  bg-[#1A4E8B] text-white shadow-lg";
+    const sideClass = "w-[12vh] h-[16vh] sm:w-[233px] sm:h-[375px] z-10 bg-white shadow-lg";
+    const contentClass = "p-2 sm:p-6 flex flex-col items-center"; // Keep padding as before
+    const positionClass = isMobile ? isLeft
+    ? "-translate-x-[130%] translate-y-[-8px]"
+    : isRight
+    ? "translate-x-[130%] translate-y-[-8px]"
+    : "translate-x-0"
+        :isLeft
         ? "-translate-x-[170%] translate-y-[10px]"
         : isRight
         ? "translate-x-[170%] translate-y-[10px]"
@@ -110,13 +117,13 @@ const Card = ({ isActive, card, isLeft, isRight }) => {
     return (
         <div className={`${baseClass} ${isActive ? activeClass : sideClass} ${positionClass}`}>
             <div className={`${contentClass} ${isActive ? "" : "bg-opacity-50"}`}>
-                <div className="w-[75px] h-[69px] mb-9">
+                <div className="w-[25px] h-[30px] sm:w-[75px] sm:h-[69px] mb-1 sm:mb-9">
                     <img src={card.icon} alt={card.name} className="w-full h-full object-contain" />
                 </div>
-                <div className={`text-2xl font-semibold mb-5 ${isActive ? "text-white" : "text-gray-600"}`}>
+                <div className={`text-xs sm:text-2xl font-semibold mb-5 ${isActive ? "text-white" : "text-gray-600"}`}>
                     {card.name}
                 </div>
-                <p className={`text-center p-7 ${isActive ? "mb-16 text-white" : "line-clamp-3 mb-5 text-gray-600"}`}>
+                <p className={`text-[0.35rem]  sm:text-base text-center sm:p-7 ${isActive ? " mb-7 sm:mb-16 text-white" : "line-clamp-3 mb-5 text-gray-600"}`}>
                     {card.description}
                 </p>
                 {isActive && (
@@ -124,7 +131,7 @@ const Card = ({ isActive, card, isLeft, isRight }) => {
                         {[...Array(5)].map((_, i) => (
                             <svg
                                 key={i}
-                                className={`w-5 h-5 ${i < card.rating ? 'text-yellow-400' : 'text-gray-400'}`}
+                                className={`w-2 h-2 sm:w-5 sm:h-5 ${i < card.rating ? 'text-yellow-400' : 'text-gray-400'}`}
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                             >

@@ -28,34 +28,34 @@ const IntegrationBlock = () => {
 
          {/* Card 2 */}
          <div className="w-full sm:w-[300px] lg:w-[229px]">
-            <div className="mb-5 shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
-               <div className="flex">
+            <div className="mb-5 h-[46vh] sm:h-[20vh] shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
+               <div className="sm:flex">
                   <img
                      src={WebflowLogo}
                      alt="WebflowLogo"
-                     className="w-[50px] h-[62px] object-contain mb-4"
-                  />
-                  <h3 className="text-lg text-gray-800 ml-3 font-medium">
+                     className="sm:w-[50px] sm:h-[62px] w-[13vh] h-[20vh] object-contain sm:mb-4"
+                  /> 
+                  <h3 className="text-xl sm:text-lg  text-gray-800 sm:ml-3 font-medium">
                      Webflow
                   </h3>
                </div>
-               <p className="text-sm text-[#939393] font-semibold">
+               <p className="mt-5 sm:mt-0 sm:text-sm  text-[#939393] font-semibold">
                   Feel free to adapt and customize this....
                </p>
             </div>
 
-            <div className="mt-6 shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
-               <div className="flex">
+            <div className="mt-6 h-[46vh] sm:h-[20.5vh] shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
+               <div className="sm:flex">
                   <img
                      src={StackLogo}
                      alt="StackLogo"
-                     className="w-[50px] h-[62px] object-contain mb-4"
+                     className="sm:w-[50px] sm:h-[62px] w-[13vh] h-[20vh] object-contain sm:mb-4"
                   />
-                  <h3 className="text-lg text-gray-800 ml-3 font-medium">
+                  <h3 className="text-xl sm:text-lg  text-gray-800 ml-3 font-medium">
                      Stack
                   </h3>
                </div>
-               <p className="text-sm text-[#939393] font-semibold">
+               <p className="mt-5 sm:mt-0 sm:text-sm  text-[#939393] font-semibold">
                   Feel free to adapt and customize this....
                </p>
             </div>
@@ -78,34 +78,33 @@ const IntegrationBlock = () => {
 
          {/* Card 4 */}
          <div className="w-full sm:w-[300px] lg:w-[229px]">
-            <div className="mb-5 shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
-               <div className="flex">
+            <div className="mb-5 h-[46vh] sm:h-[20vh] shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
+               <div className="sm:flex">
                   <img
                      src={TwitterLogo}
                      alt="TwitterLogo"
-                     className="w-[50px] h-[62px] object-contain mb-4"
+                     className="sm:w-[50px] sm:h-[62px] w-[13vh] h-[20vh] object-contain sm:mb-4"
                   />
-                  <h3 className="text-lg text-gray-800 ml-3 font-medium">
+                  <h3 className="text-xl sm:text-lg  text-gray-800 sm:ml-3 font-medium">
                      Twitter
                   </h3>
                </div>
-               <p className="text-sm text-[#939393] font-semibold">
+               <p className="mt-5 sm:mt-0 sm:text-sm  text-[#939393] font-semibold">
                   Feel free to adapt and customize this....
                </p>
             </div>
-
-            <div className="mt-6 shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
-               <div className="flex">
+            <div className="mt-6 h-[46vh] sm:h-[20.5vh] shadow-lg rounded-lg p-4 flex flex-col text-left items-left bg-white transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
+               <div className="sm:flex">
                   <img
                      src={InstagramLogo}
                      alt="InstagramLogo"
-                     className="w-[50px] h-[62px] object-contain mb-4"
+                     className="sm:w-[50px] sm:h-[62px] w-[13vh] h-[20vh] object-contain sm:mb-4"
                   />
-                  <h3 className="text-lg text-gray-800 ml-3 font-medium">
+                  <h3 className="text-xl sm:text-lg  text-gray-800 sm:ml-3 font-medium">
                      Instagram
                   </h3>
                </div>
-               <p className="text-sm text-[#939393] font-semibold">
+               <p className="mt-5 sm:mt-0 sm:text-sm  text-[#939393] font-semibold">
                   Feel free to adapt and customize this....
                </p>
             </div>
