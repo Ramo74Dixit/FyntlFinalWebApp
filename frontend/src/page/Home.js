@@ -8,6 +8,8 @@ import UserReview from './UserReview';
 import Integrate from './Integrate';
 import Adv2 from './Adv2';
 import Privacy from './Privacy';
+import Card from './Integrate';
+
 const Home = () => {
    const isMobile = window.innerWidth <= 700;
    return (
