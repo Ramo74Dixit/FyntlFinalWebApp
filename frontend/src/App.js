@@ -23,7 +23,7 @@ function App() {
           {/* <Route path="/adv1" element={<Adv1 />} /> */}
           <Route path="/copilot-intro" element={<CopilotIntro />} />
           <Route path="/terms" element={<TermsandCondition />} />
-        <Route path="/privacy" element={<TermsandCondition />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/copilot-intro" element={<CopilotIntro />} />         
         </Routes>
       </div>
