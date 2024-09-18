@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from './Navbar';
 import AccountingCopilot from './AccountingCopilot';
 import BenefitsCopilot from "./BenefitsCopilot";
+import CoPilotFeature from './Co-pilot-Feature';
 
 const CopilotIntro = () => {
   return (
@@ -22,6 +23,7 @@ const CopilotIntro = () => {
       </div>
       <AccountingCopilot />
       <BenefitsCopilot />
+      <CoPilotFeature/>
     </div>
   );
 };
